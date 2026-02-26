@@ -50,6 +50,16 @@ export function AudioProvider({ children }: { children: ReactNode }) {
     })
   }, [])
 
+  // Restore unlock state from a previous session (page refresh / direct URL).
+  // This shows the MiniPlayer without forcing auto-play — the browser's
+  // autoplay policy still applies; the user can click play in the MiniPlayer.
+  useEffect(() => {
+    if (localStorage.getItem('unlocked') === '1') {
+      unlockedRef.current = true
+      setUnlocked(true)
+    }
+  }, [])
+
   const unlock = useCallback(() => {
     unlockedRef.current = true
     setUnlocked(true)
