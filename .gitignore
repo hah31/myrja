@@ -1,0 +1,11 @@
+# Build output
+.next/
+out/
+node_modules/
+
+# env
+.env*.local
+
+# misc
+.DS_Store
+*.pem
