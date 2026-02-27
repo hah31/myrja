@@ -3,8 +3,11 @@ import './globals.css'
 import Providers from '@/components/Providers'
 
 export const metadata: Metadata = {
-  title: 'Nabeel Hussein',
+  title: 'We love Myrja',
   description: 'An Editorial',
+  icons: {
+    icon: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
