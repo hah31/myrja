@@ -31,12 +31,12 @@ export default function LockPage() {
     }
   }, [router])
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
     if (value.toLowerCase().trim() === PASSWORD) {
       // Correct — unlock and navigate
       localStorage.setItem('unlocked', '1')
-      unlock()
+      await unlock()
       play(asset('/audio/track-a.mp3'), 'Track A')
       setSuccess(true)
       setTimeout(() => router.push('/home'), 900)
