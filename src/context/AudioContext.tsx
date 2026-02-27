@@ -16,7 +16,7 @@ interface AudioContextValue {
   volume: number
   trackTitle: string
   unlocked: boolean
-  unlock: () => void
+  unlock: () => Promise<void>
   play: (src: string, title: string) => void
   togglePlay: () => void
   toggleMute: () => void
@@ -30,6 +30,7 @@ const FADE_MS = 700
 export function AudioProvider({ children }: { children: ReactNode }) {
   // Refs for mutable audio state (avoids stale closure issues in callbacks)
   const HowlRef = useRef<any>(null)      // Howl class (loaded dynamically)
+  const HowlerRef = useRef<any>(null)    //Howler singleton for ctx resume
   const howlRef = useRef<any>(null)      // current Howl instance
   const currentSrcRef = useRef('')
   const unlockedRef = useRef(false)
@@ -47,6 +48,7 @@ export function AudioProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     import('howler').then((m) => {
       HowlRef.current = m.Howl
+      HowlerRef.current = m.Howler
     })
   }, [])
 
@@ -60,9 +62,26 @@ export function AudioProvider({ children }: { children: ReactNode }) {
     }
   }, [])
 
-  const unlock = useCallback(() => {
-    unlockedRef.current = true
-    setUnlocked(true)
+  const unlock = useCallback(async () => {
+  unlockedRef.current = true
+  setUnlocked(true)
+
+  // Ensure howler is loaded before playback is attempted
+  if (!HowlRef.current || !HowlerRef.current) {
+    const m = await import('howler')
+    HowlRef.current = m.Howl
+    HowlerRef.current = m.Howler
+  }
+
+  // Resume Web Audio context if present (harmless no-op if not needed)
+  const ctx = HowlerRef.current?.ctx
+  if (ctx && ctx.state !== 'running') {
+    try {
+      await ctx.resume()
+    } catch (_) {
+      // Ignore — some browsers may not need or allow this in html5 mode
+    }
+  }
   }, [])
 
   const play = useCallback((src: string, title: string) => {
