@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { motion, useScroll, useTransform } from 'framer-motion'
@@ -17,14 +17,23 @@ const TRACK_A_SRC = '/audio/track-a.mp3'
 export default function HomePage() {
   const { play, unlocked } = useAudio()
   const router = useRouter()
-  const containerRef = useRef<HTMLDivElement>(null)
 
-  // Scroll-based opacity transforms for content sections
-  const { scrollYProgress } = useScroll({ container: undefined })
-  const heroOpacity = useTransform(scrollYProgress, [0, 0.15], [1, 0])
-  const heroY = useTransform(scrollYProgress, [0, 0.2], [0, -60])
-  const navOpacity = useTransform(scrollYProgress, [0.4, 0.55], [0, 1])
-  const navY = useTransform(scrollYProgress, [0.4, 0.6], [40, 0])
+  // Scroll-based transforms.
+  //
+  // Page layout (500 vh container, viewport = 100 vh, max-scroll = 400 vh):
+  //   ┌ Hero sticky  100 vh   → scroll  0–100 vh   (progress 0–0.25)
+  //   ├ Spacer       160 vh
+  //   ├ Nav sticky   100 vh   → enters viewport at scroll 260 vh
+  //   │                         progress = 260/400 = 0.65
+  //   └ Buffer       100 vh
+  //
+  // Hero fades out quickly in the first ~10% of scroll.
+  // Nav fades in right as its sticky section first appears (~progress 0.65).
+  const { scrollYProgress } = useScroll()
+  const heroOpacity = useTransform(scrollYProgress, [0, 0.12], [1, 0])
+  const heroY       = useTransform(scrollYProgress, [0, 0.15], [0, -60])
+  const navOpacity  = useTransform(scrollYProgress, [0.62, 0.72], [0, 1])
+  const navY        = useTransform(scrollYProgress, [0.62, 0.72], [40, 0])
 
   // Play Track A (or resume if already playing it)
   useEffect(() => {

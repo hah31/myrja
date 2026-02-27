@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useAudio } from '@/context/AudioContext'
 import { asset } from '@/lib/asset'
@@ -21,7 +20,6 @@ const fadeRise = {
 
 export default function FeaturePageClient({ feature }: Props) {
   const { play, unlocked } = useAudio()
-  const router = useRouter()
   const heroRef = useRef<HTMLDivElement>(null)
 
   const { scrollYProgress } = useScroll({
