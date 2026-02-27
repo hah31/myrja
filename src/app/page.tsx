@@ -128,7 +128,7 @@ export default function LockPage() {
               lineHeight: 1,
             }}
           >
-            NABEEL HUSSAIN
+            Welcome to MYRJA.
           </h1>
         </div>
 
