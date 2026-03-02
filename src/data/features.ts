@@ -31,7 +31,7 @@ export const features: Feature[] = [
     slug: 'nabeel',
     subtitle: 'Estupid fricken Nabeel',
     heroImage: '/media/heroes/ascent.jpg',
-    audioSrc: '/audio/features/ascent.mp3',
+    audioSrc: '/audio/track-4raws.mp3',
     media: [
       { type: 'image', src: '/media/features/ascent/01.jpg', caption: 'Elevation' },
       { type: 'image', src: '/media/features/ascent/02.jpg', caption: 'The Peak' },
