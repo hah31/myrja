@@ -409,10 +409,50 @@ function getPlaceholderText(name: string, index: number): string {
       'Presence is the most unclassifiable quality in a person. It cannot be manufactured or rehearsed. It emerges from a coherence between interior life and external expression — when what you carry matches what you show.',
       'The domain of influence extends far beyond the visible. Every decision, every refusal, every silence shapes the field around it. Power understood this way is not possession but responsibility.',
     ],
-    LEGACY: [
-      'Legacy is the signature left in the lives of others — invisible, indelible, and permanent beyond the memory of its author. What remains when everything else is stripped away is not achievement but impact.',
-      'The things that endure are rarely the things we intended to last. A casual remark remembered for decades. A gesture witnessed by one person who carried it forward. The legacy writes itself sideways.',
-      'To think about legacy is to think about time at its most uncompromising — the way it will continue without us, the way the work we do now becomes someone else\'s inheritance. This is the weight. And the gift.',
+    SKINNYDIPPER: [
+      'Is an introduction really necessary for someone we all know so well?',
+      'He might be gay, were not 100% sure.',
+      'Known for entering bodies of water with no clothes on.',
+    ],
+    THEBUCK: [
+      'If youve never been to Bucktown, USA, youve never truly lived.',
+      '16oz bottles of buck serum available on sale now at shop.myrja.com.',
+      'A cold war hero.',
+    ],
+    BAGUL: [
+      'EVERYTHING but the bagel.',
+      'Bro has beef with suhail from IFS',
+      'Creator of the legendary Mirja doja cat edit (viewable on the mirja page)',
+    ],
+    AKHMEDD: [
+      'Trained with master shifu.',
+      'Chooses dinner, please over inner peace every day',
+      'Caught at qahwah house w 2 desi broads',
+    ],
+    FAHTEE: [
+      'Pakistani frat leader Fahtee absolutely framemogs indian frat leader Ayin',
+      'Hes been doing bicep curls since before you were born',
+      'The echo is very peaceful',
+    ],
+    HAMJA: [
+      'Most know him as Hamas, but real ones call him Lenny.',
+      'He also might be gay, were not 100% sure.',
+      'Can easily dunk on the buck',
+    ],
+    WORMIN: [
+      'Barely made the cut for this website... hes got a reputation to uphold',
+      'Has an odd fetish for Atif Rafiq',
+      'Still waiting on that worm video.',
+    ],
+    YAZNIK: [
+      'Bro might be top 5 finest shyt in LA.',
+      'Best friends with Nabeel hussain, the co-creator of this website',
+      'Known for entering bodies of water with all his clothes on.',
+    ],
+    BAWAA: [
+      'The real legend of this website, he leaked every known bit of info about Mirja and ARK.',
+      'Never lets people drive his car',
+      'Truly a little fuzzball on the inside.',
     ],
   }
   return blocks[name]?.[index] ?? 'An editorial note forthcoming.'
