@@ -143,4 +143,15 @@ export const features: Feature[] = [
       { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'Yazin the beautiful' },
     ],
   },
+  {
+    name: 'BAWAA',
+    slug: 'bawa',
+    subtitle: 'GET OUT OF MY CLASSROOM',
+    heroImage: '/media/heroes/legacy.jpg',
+    audioSrc: '/audio/track-amornapraia.mp3',
+    media: [
+      { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'Bebida Monkey' },
+      { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'The Bearded Dragon' },
+    ],
+  },
 ]
