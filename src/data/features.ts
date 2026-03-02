@@ -67,7 +67,7 @@ export const features: Feature[] = [
     slug: 'the buck',
     subtitle: 'Fathered 70% of bucks in his region',
     heroImage: '/media/heroes/legacy.jpg',
-    audioSrc: '/audio/features/legacy.mp3',
+    audioSrc: '/audio/track-amornapraia.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'a fully bearded buck grazing in the pasture' },
       { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'What Endures' },
