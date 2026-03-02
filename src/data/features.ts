@@ -55,8 +55,8 @@ export const features: Feature[] = [
     ],
   },
   {
-    name: 'SKINNY DIPPER',
-    slug: 'skinny dipper',
+    name: 'SKINNYDIPPER',
+    slug: 'skinnydipper',
     subtitle: 'No clothes here...',
     heroImage: '/media/heroes/legacy.jpg',
     audioSrc: '/audio/track-kissmemore.mp3',
