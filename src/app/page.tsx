@@ -72,7 +72,7 @@ export default function LockPage() {
     <main
       style={{
         position: 'relative',
-        width: '100vw',
+        width: '100%',
         height: '100vh',
         overflow: 'hidden',
         background: '#050508',
@@ -120,7 +120,7 @@ export default function LockPage() {
           alignItems: 'center',
           justifyContent: 'center',
           gap: '2.5rem',
-          padding: '2rem',
+          padding: 'clamp(1rem, 4vw, 2rem)',
         }}
       >
         {/* Logotype */}
@@ -159,7 +159,7 @@ export default function LockPage() {
             alignItems: 'center',
             gap: '1rem',
             width: '100%',
-            maxWidth: 360,
+            maxWidth: 'clamp(280px, 90vw, 360px)',
           }}
         >
           <div
@@ -320,6 +320,12 @@ export default function LockPage() {
         @keyframes fadeIn {
           from { opacity: 0; }
           to   { opacity: 1; }
+        }
+        @media (max-width: 768px) {
+          main {
+            width: 100%;
+            max-width: 100%;
+          }
         }
       `}</style>
     </main>

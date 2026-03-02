@@ -44,8 +44,8 @@ export default function FeaturePageClient({ feature }: Props) {
         <div
           style={{
             position: 'fixed',
-            top: '1.5rem',
-            left: '1.5rem',
+            top: 'clamp(0.75rem, 2vw, 1.5rem)',
+            left: 'clamp(0.75rem, 2vw, 1.5rem)',
             zIndex: 100,
           }}
         >
@@ -77,7 +77,7 @@ export default function FeaturePageClient({ feature }: Props) {
           ref={heroRef}
           style={{
             position: 'relative',
-            width: '100vw',
+            width: '100%',
             height: '100vh',
             overflow: 'hidden',
             display: 'flex',
@@ -185,9 +185,9 @@ export default function FeaturePageClient({ feature }: Props) {
           style={{
             position: 'relative',
             zIndex: 10,
-            maxWidth: 720,
+            maxWidth: 'clamp(320px, 95vw, 720px)',
             margin: '0 auto',
-            padding: 'clamp(3rem, 8vw, 7rem) 2rem',
+            padding: 'clamp(1.5rem, 8vw, 7rem) clamp(1rem, 4vw, 2rem)',
           }}
         >
           {/* Section header */}
