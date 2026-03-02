@@ -15,8 +15,8 @@ export interface Feature {
 
 export const features: Feature[] = [
   {
-    name: 'ORIGINS',
-    slug: 'origins',
+    name: 'MYRJA',
+    slug: 'myrja',
     subtitle: 'The foundation of everything',
     heroImage: '/media/heroes/origins.jpg',
     audioSrc: '/audio/features/origins.mp3',
@@ -27,9 +27,9 @@ export const features: Feature[] = [
     ],
   },
   {
-    name: 'ASCENT',
-    slug: 'ascent',
-    subtitle: 'The climb toward something greater',
+    name: 'NABEELIUS',
+    slug: 'nabeel',
+    subtitle: 'Estupid fricken Nabeel',
     heroImage: '/media/heroes/ascent.jpg',
     audioSrc: '/audio/features/ascent.mp3',
     media: [
@@ -39,9 +39,9 @@ export const features: Feature[] = [
     ],
   },
   {
-    name: 'DOMINION',
-    slug: 'dominion',
-    subtitle: 'Command and presence',
+    name: 'DAVID',
+    slug: 'david',
+    subtitle: 'Hiu Ming David Kao',
     heroImage: '/media/heroes/dominion.jpg',
     audioSrc: '/audio/features/dominion.mp3',
     media: [
@@ -51,9 +51,9 @@ export const features: Feature[] = [
     ],
   },
   {
-    name: 'LEGACY',
-    slug: 'legacy',
-    subtitle: 'What remains when nothing else does',
+    name: 'SKINNY DIPPER',
+    slug: 'skinny dipper',
+    subtitle: 'No clothes here...',
     heroImage: '/media/heroes/legacy.jpg',
     audioSrc: '/audio/features/legacy.mp3',
     media: [
