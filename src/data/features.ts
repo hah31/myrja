@@ -49,9 +49,9 @@ export const features: Feature[] = [
     heroImage: '/media/heroes/dominion.jpg',
     audioSrc: '/audio/track-yourphonelinging.mp3',
     media: [
-      { type: 'image', src: '/media/features/dominion/01.jpg', caption: 'Control' },
-      { type: 'image', src: '/media/features/dominion/02.jpg', caption: 'Authority' },
-      { type: 'video', src: '/media/features/dominion/01.mp4', caption: 'Command' },
+      { type: 'image', src: '/media/features/mirja/mrkaoprofessional.jpeg', caption: 'A domesticated professional Ming.' },
+      { type: 'image', src: '/media/features/mirja/mrkaoforest.jpeg', caption: 'A wild Ming in the forests of Palatine.' },
+      { type: 'image', src: '/media/features/mirja/bawamirrorpic.jpeg', caption: 'OMA GET OUT OF MY CLASSROOM!' },
     ],
   },
   {
@@ -63,7 +63,7 @@ export const features: Feature[] = [
     media: [
       { type: 'image', src: '/media/features/mirja/cutemani.jpeg', caption: 'what a sweet guy' },
       { type: 'image', src: '/media/features/mirja/amaanpinkolympics.png', caption: 'Mani performs at the Olympics' },
-      { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'What Endures' },
+      { type: 'image', src: '/media/features/mirja/manitongue.jpeg', caption: 'That tongue is relentless' },
     ],
   },
   {
@@ -74,7 +74,8 @@ export const features: Feature[] = [
     audioSrc: '/audio/track-amornapraia.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'a fully bearded buck grazing in the pasture' },
-      { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'What Endures' },
+      { type: 'image', src: '/media/features/mirja/yusibicycle.png', caption: 'Who knew his legs could go that far?' },
+      { type: 'image', src: '/media/features/mirja/fjallraven.jpeg', caption: 'Fjallraven pre-serum.' },
     ],
   },
   {
@@ -84,8 +85,9 @@ export const features: Feature[] = [
     heroImage: '/media/heroes/legacy.jpg',
     audioSrc: '/audio/bagel.mp3',
     media: [
-      { type: 'image', src: '/media/features/nick.png', caption: 'Bagul turned bagel' },
-      { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'What Endures' },
+      { type: 'image', src: '/media/features/mirja/bagullaughing.jpeg', caption: 'Bagul turned bagel' },
+      { type: 'image', src: '/media/features/mirja/bagulstaring.jpeg', caption: 'The eyes, chico.' },
+      { type: 'image', src: '/media/features/mirja/bagulatifs.jpeg', caption: 'SCYARFACE' },
     ],
   },
   {
@@ -95,8 +97,8 @@ export const features: Feature[] = [
     heroImage: '/media/heroes/legacy.jpg',
     audioSrc: '/audio/kungfufighting.mp3',
     media: [
-      { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'the dragon warrior himself' },
-      { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'legend' },
+      { type: 'image', src: '/media/features/mirja/akhmedpixelated.jpeg', caption: 'the dragon warrior himself' },
+      { type: 'image', src: '/media/features/mirja/akhmedlunch.jpeg', caption: 'legend' },
     ],
   },
   {
@@ -106,8 +108,9 @@ export const features: Feature[] = [
     heroImage: '/media/heroes/legacy.jpg',
     audioSrc: '/audio/1am.mp3',
     media: [
-      { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'top 5 fahteh' },
-      { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'SHEHJAAD' },
+      { type: 'image', src: '/media/features/mirja/fahteeshakes.png', caption: 'top 5 fahteh: thirsty fahteh' },
+      { type: 'image', src: '/media/features/mirja/fahteecurling.jpeg', caption: 'top 5: fahteh gets jacked' },
+      { type: 'image', src: '/media/features/mirja/fahteeflexing.jpeg', caption: 'top 5: indian frat leader ayin gets absolutley framemogged' },
     ],
   },
   {
@@ -117,8 +120,10 @@ export const features: Feature[] = [
     heroImage: '/media/heroes/legacy.jpg',
     audioSrc: '/audio/hipsdontlie.mp3',
     media: [
-      { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'hamas works at shaghf sumtimezz' },
-      { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'hamza monkey' },
+      { type: 'image', src: '/media/features/mirja/hamzaandakhmed.jpeg', caption: 'hamas works at shaghf sumtimezz' },
+      { type: 'image', src: '/media/features/mirja/rasalghul.jpeg', caption: 'Ras al Ghul lives.' },
+      { type: 'image', src: '/media/features/mirja/hamzahood.jpeg', caption: 'bros not tuff' },
+      { type: 'image', src: '/media/features/mirja/hamzaheadinhands.jpeg', caption: 'hamza is easily offended' },
     ],
   },
   {
@@ -128,8 +133,7 @@ export const features: Feature[] = [
     heroImage: '/media/heroes/legacy.jpg',
     audioSrc: '/audio/spinnin.mp3',
     media: [
-      { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'bro sells scam courses' },
-      { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'the moestro' },
+      { type: 'image', src: '/media/features/mirja/mominbumper.jpeg', caption: 'bro got on forbes to sell scam courses' },
     ],
   },
   {
@@ -139,8 +143,9 @@ export const features: Feature[] = [
     heroImage: '/media/heroes/legacy.jpg',
     audioSrc: '/audio/lahills.mp3',
     media: [
-      { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'Top 5 finest shyt in LA' },
-      { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'Yazin the beautiful' },
+      { type: 'image', src: '/media/features/mirja/yazinjawline.jpeg', caption: 'Top 5 finest shyt in LA' },
+      { type: 'image', src: '/media/features/mirja/yazineyeswide.jpeg', caption: 'when he hears "Maryam Nawaz"' },
+      { type: 'image', src: '/media/features/mirja/yazinbus.jpeg', caption: 'idk bro' },
     ],
   },
   {
@@ -150,8 +155,8 @@ export const features: Feature[] = [
     heroImage: '/media/heroes/legacy.jpg',
     audioSrc: '/audio/everywherigo.mp3',
     media: [
-      { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'Bebida Monkey' },
-      { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'The Bearded Dragon' },
+      { type: 'image', src: '/media/features/mirja/bawaposing.jpeg', caption: 'Bebida Monkey' },
+      { type: 'video', src: '/media/features/legacy/bawamirrorpic.jpeg', caption: 'The Bearded Dragon' },
     ],
   },
 ]
