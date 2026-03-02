@@ -19,7 +19,7 @@ export const features: Feature[] = [
     slug: 'myrja',
     subtitle: 'The foundation of everything',
     heroImage: '/media/heroes/origins.jpg',
-    audioSrc: '/audio/features/origins.mp3',
+    audioSrc: '/audio/track-bazooka.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/mirjalickinglips.jpg', caption: 'Mirja licks his lips' },
       { type: 'image', src: '/media/features/mirja/suhoorfestmirja.jpg', caption: 'Mirja gets brain at Suhoorfest' },
