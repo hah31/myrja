@@ -17,6 +17,7 @@ interface AudioContextValue {
   trackTitle: string
   unlocked: boolean
   unlock: () => Promise<void>
+  resumeCtx: () => void
   play: (src: string, title: string) => void
   togglePlay: () => void
   toggleMute: () => void
@@ -60,6 +61,12 @@ export function AudioProvider({ children }: { children: ReactNode }) {
       unlockedRef.current = true
       setUnlocked(true)
     }
+  }, [])
+
+  // Synchronously starts resuming Howler's AudioContext — call this inside a
+  // user-gesture handler (before any await) to clear the autoplay warning.
+  const resumeCtx = useCallback(() => {
+    HowlerRef.current?.ctx?.resume?.().catch(() => {})
   }, [])
 
   const unlock = useCallback(async () => {
@@ -153,6 +160,7 @@ export function AudioProvider({ children }: { children: ReactNode }) {
         trackTitle,
         unlocked,
         unlock,
+        resumeCtx,
         play,
         togglePlay,
         toggleMute,
