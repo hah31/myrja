@@ -21,19 +21,9 @@ export const features: Feature[] = [
     heroImage: '/media/heroes/origins.jpg',
     audioSrc: '/audio/features/origins.mp3',
     media: [
-      { type: 'image', src: '/media/features/origins/01.jpg', caption: 'Chapter I' },
-      { type: 'image', src: '/media/features/origins/02.jpg', caption: 'Chapter II' },
-      { type: 'video', src: '/media/features/origins/01.mp4', caption: 'The Beginning' },
-    ],
-  },
-  {
-    name: 'THE BEARD',
-    slug: 'beard',
-    subtitle: 'Keeps the beard curly',
-    heroImage: '/media/heroes/origins.jpg',
-    audioSrc: '/audio/features/bebida.mp3',
-    media: [
-      { type : 'image', src: '/media/features/beard/o1.jpg', caption: 'GET OUTTA MY CASSROOM' },
+      { type: 'image', src: '/media/features/mirja/mirjalickinglips.jpg', caption: 'Mirja licks his lips' },
+      { type: 'image', src: '/media/features/mirja/suhoorfestmirja.jpg', caption: 'Mirja gets brain at Suhoorfest' },
+      { type: 'video', src: '/media/features/mirja/mirjagoldeneyes.png', caption: 'Mirja turns evil' },
     ],
   },
   {
@@ -67,8 +57,19 @@ export const features: Feature[] = [
     heroImage: '/media/heroes/legacy.jpg',
     audioSrc: '/audio/features/legacy.mp3',
     media: [
-      { type: 'image', src: '/media/features/legacy/01.jpg', caption: 'Permanence' },
-      { type: 'image', src: '/media/features/legacy/02.jpg', caption: 'Echo' },
+      { type: 'image', src: '/media/features/mirja/cutemani.jpeg', caption: 'what a sweet guy' },
+      { type: 'image', src: '/media/features/mirja/amaanpinkolympics.png', caption: 'Mani performs at the Olympics' },
+      { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'What Endures' },
+    ],
+  },
+  {
+    name: 'THE BUCK',
+    slug: 'the buck',
+    subtitle: 'Fathered 70% of bucks in his region',
+    heroImage: '/media/heroes/legacy.jpg',
+    audioSrc: '/audio/features/legacy.mp3',
+    media: [
+      { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'a fully bearded buck grazing in the pasture' },
       { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'What Endures' },
     ],
   },
