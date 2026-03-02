@@ -27,6 +27,16 @@ export const features: Feature[] = [
     ],
   },
   {
+    name: 'THE BEARD',
+    slug: 'beard',
+    subtitle: 'Keeps the beard curly',
+    heroImage: '/media/heroes/origins.jpg',
+    audioSrc: '/audio/features/bebida.mp3',
+    media: [
+      { type : 'image', src: '/media/features/beard/o1.jpg', caption: 'GET OUTTA MY CASSROOM' },
+    ],
+  },
+  {
     name: 'NABEELIUS',
     slug: 'nabeel',
     subtitle: 'Estupid fricken Nabeel',
