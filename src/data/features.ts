@@ -67,8 +67,8 @@ export const features: Feature[] = [
     ],
   },
   {
-    name: 'THE BUCK',
-    slug: 'the buck',
+    name: 'THEBUCK',
+    slug: 'thebuck',
     subtitle: 'Fathered 70% of bucks in his region',
     heroImage: '/media/heroes/legacy.jpg',
     audioSrc: '/audio/track-amornapraia.mp3',
