@@ -22,8 +22,10 @@ export const features: Feature[] = [
     audioSrc: '/audio/track-bazooka.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/mirjalickinglips.jpg', caption: 'Mirja licks his lips' },
-      { type: 'image', src: '/media/features/mirja/suhoorfestmirja.jpg', caption: 'Mirja gets brain at Suhoorfest' },
+      { type: 'image', src: '/media/features/mirja/suhoorfestlossymirja.jpeg', caption: 'Mirja gets brain at Suhoorfest' },
       { type: 'image', src: '/media/features/mirja/mirjagoldeneyes.png', caption: 'Mirja turns evil' },
+      { type: 'image', src: '/media/features/mirja/mirjaxark.jpeg', caption: 'Mirja X ARK' },
+      { type: 'image', src: '/media/features/mirja/mirjadog.jpeg', caption: 'Whos a good boy?' },
     ],
   },
   {
@@ -37,6 +39,7 @@ export const features: Feature[] = [
       { type: 'image', src: '/media/features/mirja/nabeelmvp.png', caption: 'How does it feel to be stuck on the sideline...' },
       { type: 'image', src: '/media/features/mirja/nabeelstaring.png', caption: 'The eyes, chico.  They never lie.' },
       { type: 'image', src: '/media/features/mirja/nabeeltrophy.png', caption: 'nabeel hard carry' },
+      { type: 'image', src: '/media/features/mirja/geekedvslockedin.jpeg', caption: 'bro thinks hes gang' },
     ],
   },
   {
