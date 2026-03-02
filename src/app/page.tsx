@@ -16,7 +16,7 @@ const PASSWORD = 'nabeelhussain'
 
 export default function LockPage() {
   const router = useRouter()
-  const { unlock, play } = useAudio()
+  const { unlock, resumeCtx, play } = useAudio()
   const [value, setValue] = useState('')
   const [error, setError] = useState(false)
   const [shaking, setShaking] = useState(false)
@@ -48,20 +48,20 @@ export default function LockPage() {
     }
   }
 
-  const handleContinue = async () => {
-    // ── Synchronous AudioContext resume ────────────────────────────────────
-    // Browsers require audio to be created/resumed directly inside a user-
-    // gesture event handler (no async gap). We do that here before any await.
-    try {
-      const tmpCtx = new AudioContext()
-      tmpCtx.resume()          // intentionally not awaited — just opens the gate
-    } catch (_) {
-      // AudioContext not available (e.g. very old browser) — continue anyway
-    }
-
-    // ── Unlock + play + navigate ───────────────────────────────────────────
+  const handleContinue = () => {
+    // ── All of this is synchronous — no await before play() ────────────────
+    // Browsers grant a "transient user activation" on click. Any await before
+    // <audio>.play() risks expiring that token. We keep the entire call chain
+    // synchronous so the browser allows autoplay.
+    //
+    // resumeCtx()  — starts resuming Howler's AudioContext (fire-and-forget).
+    // unlock()     — fire-and-forget; its FIRST line sets unlockedRef = true
+    //                synchronously, which is all play() needs to pass its guard.
+    // play()       — creates the Howl and calls <audio>.play() right here,
+    //                still inside the user-gesture handler.
+    resumeCtx()
     localStorage.setItem('unlocked', '1')
-    await unlock()
+    unlock()
     play(asset('/audio/track-a.mp3'), 'Track A')
     router.push('/home')
   }
