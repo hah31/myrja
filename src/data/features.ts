@@ -82,7 +82,7 @@ export const features: Feature[] = [
     slug: 'bagul',
     subtitle: 'Everything but the bagul',
     heroImage: '/media/heroes/legacy.jpg',
-    audioSrc: '/audio/track-amornapraia.mp3',
+    audioSrc: '/audio/bagel.mp3',
     media: [
       { type: 'image', src: '/media/features/nick.png', caption: 'Bagul turned bagel' },
       { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'What Endures' },
