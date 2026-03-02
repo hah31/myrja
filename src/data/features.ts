@@ -100,7 +100,7 @@ export const features: Feature[] = [
     ],
   },
   {
-    name: 'FAHEET',
+    name: 'FAHTEE',
     slug: 'faheet',
     subtitle: 'TOP 5 FATAHH',
     heroImage: '/media/heroes/legacy.jpg',
