@@ -156,7 +156,7 @@ export const features: Feature[] = [
     audioSrc: '/audio/everywherigo.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/bawaposing.jpeg', caption: 'Bebida Monkey' },
-      { type: 'video', src: '/media/features/legacy/bawamirrorpic.jpeg', caption: 'The Bearded Dragon' },
+      { type: 'image', src: '/media/features/legacy/bawamirrorpic.jpeg', caption: 'The Bearded Dragon' },
     ],
   },
 ]
