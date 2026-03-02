@@ -55,7 +55,7 @@ export const features: Feature[] = [
     slug: 'skinny dipper',
     subtitle: 'No clothes here...',
     heroImage: '/media/heroes/legacy.jpg',
-    audioSrc: '/audio/features/legacy.mp3',
+    audioSrc: '/audio/track-kissmemore.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/cutemani.jpeg', caption: 'what a sweet guy' },
       { type: 'image', src: '/media/features/mirja/amaanpinkolympics.png', caption: 'Mani performs at the Olympics' },
