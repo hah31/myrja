@@ -43,7 +43,7 @@ export const features: Feature[] = [
     slug: 'david',
     subtitle: 'Hiu Ming David Kao',
     heroImage: '/media/heroes/dominion.jpg',
-    audioSrc: '/audio/features/dominion.mp3',
+    audioSrc: '/audio/track-yourphonelinging.mp3',
     media: [
       { type: 'image', src: '/media/features/dominion/01.jpg', caption: 'Control' },
       { type: 'image', src: '/media/features/dominion/02.jpg', caption: 'Authority' },
