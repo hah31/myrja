@@ -23,7 +23,7 @@ export const features: Feature[] = [
     media: [
       { type: 'image', src: '/media/features/mirja/mirjalickinglips.jpg', caption: 'Mirja licks his lips' },
       { type: 'image', src: '/media/features/mirja/suhoorfestmirja.jpg', caption: 'Mirja gets brain at Suhoorfest' },
-      { type: 'video', src: '/media/features/mirja/mirjagoldeneyes.png', caption: 'Mirja turns evil' },
+      { type: 'image', src: '/media/features/mirja/mirjagoldeneyes.png', caption: 'Mirja turns evil' },
     ],
   },
   {
@@ -33,9 +33,10 @@ export const features: Feature[] = [
     heroImage: '/media/heroes/ascent.jpg',
     audioSrc: '/audio/track-4raws.mp3',
     media: [
-      { type: 'image', src: '/media/features/ascent/01.jpg', caption: 'Elevation' },
-      { type: 'image', src: '/media/features/ascent/02.jpg', caption: 'The Peak' },
-      { type: 'video', src: '/media/features/ascent/01.mp4', caption: 'In Motion' },
+      { type: 'image', src: '/media/features/mirja/nabeelgetsshot.png', caption: 'Goes around, comes around' },
+      { type: 'image', src: '/media/features/mirja/nabeelmvp', caption: 'How does it feel to be stuck on the sideline...' },
+      { type: 'image', src: '/media/features/mirja/nabeelstaring.png', caption: 'The eyes, chico.  They never lie.' },
+      { type: 'image', src: '/media/features/mirja/nabeeltrophy.png', caption: 'nabeel hard carry' },
     ],
   },
   {
