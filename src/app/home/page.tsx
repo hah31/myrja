@@ -153,7 +153,7 @@ export default function HomePage() {
                   marginBottom: '1.5rem',
                 }}
               >
-                An Editorial
+                MYRJA X ARK DROPPING SOON
               </p>
               <h1
                 style={{
@@ -166,9 +166,9 @@ export default function HomePage() {
                   textShadow: '0 0 80px rgba(30,58,138,0.4)',
                 }}
               >
-                NABEEL
+                MYRJAAA
                 <br />
-                HUSSAIN
+                BAIIIG
               </h1>
               <p
                 style={{
