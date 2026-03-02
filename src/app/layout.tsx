@@ -3,7 +3,7 @@ import './globals.css'
 import Providers from '@/components/Providers'
 
 export const metadata: Metadata = {
-  title: 'We love Myrja',
+  title: 'WE LOVE MYRJAA',
   description: 'An Editorial',
   icons: {
     icon: '/favicon.png',
