@@ -99,7 +99,7 @@ export const features: Feature[] = [
   {
     name: 'FAHEET',
     slug: 'faheet',
-    subtitle: 'TOP % FATAHH',
+    subtitle: 'TOP 5 FATAHH',
     heroImage: '/media/heroes/legacy.jpg',
     audioSrc: '/audio/track-amornapraia.mp3',
     media: [
@@ -110,7 +110,7 @@ export const features: Feature[] = [
   {
     name: 'HAMJA',
     slug: 'hamja',
-    subtitle: 'also known as Hamas',
+    subtitle: 'Also known as Hamas',
     heroImage: '/media/heroes/legacy.jpg',
     audioSrc: '/audio/track-amornapraia.mp3',
     media: [
