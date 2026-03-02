@@ -93,7 +93,7 @@ export const features: Feature[] = [
     slug: 'akhmed',
     subtitle: 'The 3rd rule of akhmed',
     heroImage: '/media/heroes/legacy.jpg',
-    audioSrc: '/audio/track-amornapraia.mp3',
+    audioSrc: '/audio/kungfufighting.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'the dragon warrior himself' },
       { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'legend' },
@@ -104,7 +104,7 @@ export const features: Feature[] = [
     slug: 'faheet',
     subtitle: 'TOP 5 FATAHH',
     heroImage: '/media/heroes/legacy.jpg',
-    audioSrc: '/audio/track-amornapraia.mp3',
+    audioSrc: '/audio/1am.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'top 5 fahteh' },
       { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'SHEHJAAD' },
@@ -115,7 +115,7 @@ export const features: Feature[] = [
     slug: 'hamja',
     subtitle: 'Also known as Hamas',
     heroImage: '/media/heroes/legacy.jpg',
-    audioSrc: '/audio/track-amornapraia.mp3',
+    audioSrc: '/audio/hipsdontlie.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'hamas works at shaghf sumtimezz' },
       { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'hamza monkey' },
@@ -126,7 +126,7 @@ export const features: Feature[] = [
     slug: 'wormin',
     subtitle: 'Yes, the worm video exists.',
     heroImage: '/media/heroes/legacy.jpg',
-    audioSrc: '/audio/track-amornapraia.mp3',
+    audioSrc: '/audio/spinnin.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'bro sells scam courses' },
       { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'the moestro' },
@@ -137,7 +137,7 @@ export const features: Feature[] = [
     slug: 'yaznik',
     subtitle: 'Ravioli Ravioli, Answeroni Answeroni',
     heroImage: '/media/heroes/legacy.jpg',
-    audioSrc: '/audio/track-amornapraia.mp3',
+    audioSrc: '/audio/lahills.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'Top 5 finest shyt in LA' },
       { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'Yazin the beautiful' },
@@ -148,7 +148,7 @@ export const features: Feature[] = [
     slug: 'bawa',
     subtitle: 'GET OUT OF MY CLASSROOM',
     heroImage: '/media/heroes/legacy.jpg',
-    audioSrc: '/audio/track-amornapraia.mp3',
+    audioSrc: '/audio/everywherigo.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'Bebida Monkey' },
       { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'The Bearded Dragon' },
