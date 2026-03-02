@@ -34,7 +34,7 @@ export const features: Feature[] = [
     audioSrc: '/audio/track-4raws.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/nabeelgetsshot.png', caption: 'Goes around, comes around' },
-      { type: 'image', src: '/media/features/mirja/nabeelmvp', caption: 'How does it feel to be stuck on the sideline...' },
+      { type: 'image', src: '/media/features/mirja/nabeelmvp.png', caption: 'How does it feel to be stuck on the sideline...' },
       { type: 'image', src: '/media/features/mirja/nabeelstaring.png', caption: 'The eyes, chico.  They never lie.' },
       { type: 'image', src: '/media/features/mirja/nabeeltrophy.png', caption: 'nabeel hard carry' },
     ],
@@ -72,6 +72,72 @@ export const features: Feature[] = [
     media: [
       { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'a fully bearded buck grazing in the pasture' },
       { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'What Endures' },
+    ],
+  },
+  {
+    name: 'BAGUL',
+    slug: 'bagul',
+    subtitle: 'Everything but the bagul',
+    heroImage: '/media/heroes/legacy.jpg',
+    audioSrc: '/audio/track-amornapraia.mp3',
+    media: [
+      { type: 'image', src: '/media/features/nick.png', caption: 'Bagul turned bagel' },
+      { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'What Endures' },
+    ],
+  },
+  {
+    name: 'AKHMEDD',
+    slug: 'akhmed',
+    subtitle: 'The 3rd rule of akhmed',
+    heroImage: '/media/heroes/legacy.jpg',
+    audioSrc: '/audio/track-amornapraia.mp3',
+    media: [
+      { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'the dragon warrior himself' },
+      { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'legend' },
+    ],
+  },
+  {
+    name: 'FAHEET',
+    slug: 'faheet',
+    subtitle: 'TOP % FATAHH',
+    heroImage: '/media/heroes/legacy.jpg',
+    audioSrc: '/audio/track-amornapraia.mp3',
+    media: [
+      { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'top 5 fahteh' },
+      { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'SHEHJAAD' },
+    ],
+  },
+  {
+    name: 'HAMJA',
+    slug: 'hamja',
+    subtitle: 'also known as Hamas',
+    heroImage: '/media/heroes/legacy.jpg',
+    audioSrc: '/audio/track-amornapraia.mp3',
+    media: [
+      { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'hamas works at shaghf sumtimezz' },
+      { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'hamza monkey' },
+    ],
+  },
+  {
+    name: 'WORMIN',
+    slug: 'wormin',
+    subtitle: 'Yes, the worm video exists.',
+    heroImage: '/media/heroes/legacy.jpg',
+    audioSrc: '/audio/track-amornapraia.mp3',
+    media: [
+      { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'bro sells scam courses' },
+      { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'the moestro' },
+    ],
+  },
+  {
+    name: 'YAZNIK',
+    slug: 'yaznik',
+    subtitle: 'Ravioli Ravioli, Answeroni Answeroni',
+    heroImage: '/media/heroes/legacy.jpg',
+    audioSrc: '/audio/track-amornapraia.mp3',
+    media: [
+      { type: 'image', src: '/media/features/mirja/buckinpasture.png', caption: 'Top 5 finest shyt in LA' },
+      { type: 'video', src: '/media/features/legacy/01.mp4', caption: 'Yazin the beautiful' },
     ],
   },
 ]
