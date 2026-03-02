@@ -133,3 +133,32 @@ input {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ── Mobile responsiveness ────────────────────────────── */
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  * {
+    max-width: 100%;
+  }
+
+  .vignette {
+    z-index: 9997;
+  }
+
+  .grain-overlay {
+    z-index: 9998;
+  }
+}
+
+/* ── Extra small devices (< 375px) ──────────────────────– */
+@media (max-width: 374px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
