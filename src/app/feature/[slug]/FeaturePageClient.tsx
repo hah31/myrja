@@ -394,18 +394,18 @@ export default function FeaturePageClient({ feature }: Props) {
 // Placeholder editorial copy per feature
 function getPlaceholderText(name: string, index: number): string {
   const blocks: Record<string, string[]> = {
-    ORIGINS: [
-      'Every defining moment carries the weight of everything that came before it. The roots of a story are rarely visible — they run deep beneath the surface, threading through soil and time, feeding what grows above.',
-      'To understand the beginning is to understand the architecture of a life. The foundations laid in silence, in anonymity, in the unwitnessed hours — these become the skeleton upon which everything else is built.',
-      'The first chapter is never loud. It is a quiet reckoning with possibility, a negotiation between who you are and who you might become.',
+    DAVID: [
+      'Mr. David Kao is a legendary man.  He once saved my life from a rabid Buck that was voraciously trying to inject buck serum into me.',
+      'Mr. Kao might be leaving Hinsdale Central at the end of this year, so please get your bathroom hotboxing sessions in before the end of the year.  Visit 103 College Crossing in Rolling Meadows, IL to meet his family.',
+      'A few David quotes: "OMA OMA OMA GET OUT OF MY CASSWOOM!!! as well as "ayaan it is too early for round 2" as well as "you wanna pay balls?"  and yeah ayaan, the owner of this site, has been dating him for 4 years now.',
     ],
-    ASCENT: [
-      'There is a particular quality to momentum — the way it builds invisibly until it cannot be denied. The ascent is rarely linear. It moves in spirals, in retreats, in sudden surges that redefine the trajectory entirely.',
-      'Progress measured by others is a distortion. The true climb is interior: a deepening of conviction, a refinement of purpose, a willingness to shed what no longer serves the vision.',
-      'What appears as elevation from the outside is, from within, simply the relentless practice of becoming. The summit is not a destination but a vantage point — from which the next horizon becomes visible.',
+    MYRJA: [
+      'Oh, Myrja.  What to say about Myrja.  He is an indomitable force, voraciously collecting phone numbers and snapchats at suhoorfest, munching on all sorts of goodies.',
+      'Myrja has a great relationship with his good friend ARK.',
+      'I, ayaan bandukda, am choosing not to slander Myrjas name too much, as he is a hafiz and he likes men.',
     ],
-    DOMINION: [
-      'Authority does not announce itself. It settles into a room before its carrier does, preceding and preparing. True command is not performed — it simply is, an expression of depth earned through discipline.',
+    NABEELIUS: [
+      'Nabeel does not announce himself. He arrives in a room, infinite aura, math team awards stacked in his pocket.  Everyones good friend and great side chick.',
       'Presence is the most unclassifiable quality in a person. It cannot be manufactured or rehearsed. It emerges from a coherence between interior life and external expression — when what you carry matches what you show.',
       'The domain of influence extends far beyond the visible. Every decision, every refusal, every silence shapes the field around it. Power understood this way is not possession but responsibility.',
     ],
