@@ -21,6 +21,7 @@ export default function LockPage() {
   const [error, setError] = useState(false)
   const [shaking, setShaking] = useState(false)
   const [success, setSuccess] = useState(false)
+  const [showModal, setShowModal] = useState(false)
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
@@ -34,18 +35,35 @@ export default function LockPage() {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
     if (value.toLowerCase().trim() === PASSWORD) {
-      // Correct — unlock and navigate
-      localStorage.setItem('unlocked', '1')
-      await unlock()
-      play(asset('/audio/track-a.mp3'), 'Track A')
+      // Correct — show the audio-consent modal instead of unlocking immediately.
+      // The modal's Continue button will be the affirmative user gesture that
+      // satisfies the browser's AudioContext autoplay policy.
       setSuccess(true)
-      setTimeout(() => router.push('/home'), 900)
+      setShowModal(true)
     } else {
       setError(true)
       setShaking(true)
       setTimeout(() => setShaking(false), 600)
       setTimeout(() => setError(false), 2000)
     }
+  }
+
+  const handleContinue = async () => {
+    // ── Synchronous AudioContext resume ────────────────────────────────────
+    // Browsers require audio to be created/resumed directly inside a user-
+    // gesture event handler (no async gap). We do that here before any await.
+    try {
+      const tmpCtx = new AudioContext()
+      tmpCtx.resume()          // intentionally not awaited — just opens the gate
+    } catch (_) {
+      // AudioContext not available (e.g. very old browser) — continue anyway
+    }
+
+    // ── Unlock + play + navigate ───────────────────────────────────────────
+    localStorage.setItem('unlocked', '1')
+    await unlock()
+    play(asset('/audio/track-a.mp3'), 'Track A')
+    router.push('/home')
   }
 
   if (!mounted) return null
@@ -234,6 +252,63 @@ export default function LockPage() {
         </p>
       </div>
 
+      {/* ── Audio-consent modal ───────────────────────────────────────── */}
+      {showModal && (
+        <div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            zIndex: 100,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            background: 'rgba(5,5,8,0.88)',
+            backdropFilter: 'blur(8px)',
+            animation: 'fadeIn 0.35s ease',
+          }}
+        >
+          <p
+            style={{
+              fontSize: '0.6rem',
+              letterSpacing: '0.45em',
+              textTransform: 'uppercase',
+              color: 'rgba(255,255,255,0.35)',
+              marginBottom: '2rem',
+            }}
+          >
+            Audio will begin playing
+          </p>
+
+          <button
+            onClick={handleContinue}
+            autoFocus
+            style={{
+              padding: '0.65rem 2.5rem',
+              background: 'transparent',
+              border: '1px solid rgba(255,255,255,0.15)',
+              borderRadius: 4,
+              fontSize: '0.65rem',
+              letterSpacing: '0.4em',
+              textTransform: 'uppercase',
+              color: 'rgba(255,255,255,0.6)',
+              cursor: 'pointer',
+              transition: 'all 0.3s ease',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(59,130,246,0.45)'
+              e.currentTarget.style.color = '#e8e8f0'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'
+              e.currentTarget.style.color = 'rgba(255,255,255,0.6)'
+            }}
+          >
+            Continue
+          </button>
+        </div>
+      )}
+
       <style>{`
         @keyframes shake {
           0%,100% { transform: translateX(0); }
@@ -241,6 +316,10 @@ export default function LockPage() {
           40%     { transform: translateX(8px); }
           60%     { transform: translateX(-5px); }
           80%     { transform: translateX(5px); }
+        }
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to   { opacity: 1; }
         }
       `}</style>
     </main>
