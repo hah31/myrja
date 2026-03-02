@@ -32,8 +32,6 @@ export default function HomePage() {
   const { scrollYProgress } = useScroll()
   const heroOpacity = useTransform(scrollYProgress, [0, 0.12], [1, 0])
   const heroY       = useTransform(scrollYProgress, [0, 0.15], [0, -60])
-  const navOpacity  = useTransform(scrollYProgress, [0.62, 0.72], [0, 1])
-  const navY        = useTransform(scrollYProgress, [0.62, 0.72], [40, 0])
 
   // Play Track A (or resume if already playing it)
   useEffect(() => {
@@ -201,8 +199,10 @@ export default function HomePage() {
             }}
           >
             <motion.div
-              style={{ opacity: navOpacity, y: navY }}
-              transition={{ duration: 0.6 }}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, type: "spring", stiffness: 40, damping: 15 }}
+              viewport={{ once: true, margin: "0px 0px -100px 0px" }}
             >
               <p
                 style={{
@@ -225,12 +225,15 @@ export default function HomePage() {
                   maxWidth: 560,
                 }}
               >
-                {features.map((feature, i) => (
+                {features.map((feature, i) => {
+                  const itemCount = features.length
+                  const reverseIndex = itemCount - 1 - i
+                  return (
                   <motion.div
                     key={feature.slug}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: i * 0.12 }}
+                    transition={{ duration: 0.5, type: "spring", stiffness: 60, damping: 12, delay: reverseIndex * 0.08 }}
                     viewport={{ once: true }}
                   >
                     <Link
@@ -298,7 +301,8 @@ export default function HomePage() {
                       </div>
                     </Link>
                   </motion.div>
-                ))}
+                  )
+                })}
               </nav>
             </motion.div>
           </div>
