@@ -29,7 +29,7 @@ export const features: Feature[] = [
     ],
   },
   {
-    name: 'NABEELIUS',
+    name: 'NABEEEL',
     slug: 'nabeel',
     subtitle: 'Estupid fricken Nabeel',
     heroImage: '/media/heroes/ascent.jpg',
@@ -55,7 +55,7 @@ export const features: Feature[] = [
     ],
   },
   {
-    name: 'SKINNYDIPPER',
+    name: 'DIPPER',
     slug: 'skinnydipper',
     subtitle: 'No clothes here...',
     heroImage: '/media/heroes/legacy.jpg',
