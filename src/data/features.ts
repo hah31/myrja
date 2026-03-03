@@ -132,7 +132,7 @@ export const features: Feature[] = [
     heroImage: '/media/heroes/legacy.jpg',
     audioSrc: '/audio/spinnin.mp3',
     media: [
-      { type: 'image', src: '/media/features/mirja/mominbumper.jpeg', caption: 'bro got on forbes to sell scam courses' },
+      { type: 'image', src: '/media/features/mirja/rasalghul.jpeg', caption: 'bro did not get on forbes to sell scam courses' },
     ],
   },
   {
