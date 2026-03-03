@@ -61,7 +61,6 @@ export const features: Feature[] = [
     heroImage: '/media/heroes/legacy.jpg',
     audioSrc: '/audio/track-kissmemore.mp3',
     media: [
-      { type: 'image', src: '/media/features/mirja/cutemani.jpeg', caption: 'what a sweet guy' },
       { type: 'image', src: '/media/features/mirja/amaanpinkolympics.png', caption: 'Mani performs at the Olympics' },
       { type: 'image', src: '/media/features/mirja/manitongue.jpeg', caption: 'That tongue is relentless' },
     ],
