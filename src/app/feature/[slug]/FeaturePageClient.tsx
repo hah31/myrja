@@ -414,12 +414,12 @@ function getPlaceholderText(name: string, index: number): string {
       'Myrja has a great relationship with his good friend ARK.',
       'I, ayaan bandukda, am choosing not to slander Myrjas name too much, as he is a hafiz and he likes men.',
     ],
-    NABEELIUS: [
+    NABEEEL: [
       'Nabeel does not announce himself. He arrives in a room, infinite aura, math team awards stacked in his pocket.  Everyones good friend and great side chick.',
       'Presence is the most unclassifiable quality in a person. It cannot be manufactured or rehearsed. It emerges from a coherence between interior life and external expression — when what you carry matches what you show.',
       'The domain of influence extends far beyond the visible. Every decision, every refusal, every silence shapes the field around it. Power understood this way is not possession but responsibility.',
     ],
-    SKINNYDIPPER: [
+    DIPPER: [
       'Is an introduction really necessary for someone we all know so well?',
       'He might be gay, were not 100% sure.',
       'Known for entering bodies of water with no clothes on.',
