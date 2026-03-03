@@ -451,7 +451,7 @@ function getPlaceholderText(name: string, index: number): string {
     ],
     WORMIN: [
       'Barely made the cut for this website... hes got a reputation to uphold',
-      'Has an odd fetish for Atif Rafiq',
+      'There was a different reference here.  But it had to be censored upon Wormins request.  Lets just say wormin is a fricken legend.',
       'Still waiting on that worm video.',
     ],
     YAZNIK: [
