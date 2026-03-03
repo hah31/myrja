@@ -7,6 +7,8 @@ import { useAudio } from '@/context/AudioContext'
 import { asset } from '@/lib/asset'
 import { Feature } from '@/data/features'
 import RouteGuard from '@/components/RouteGuard'
+import { getNextFeatureSlug, getPreviousFeatureSlug } from '@/lib/featureNavigation'
+import FeatureNavigation from '@/components/FeatureNavigation'
 
 interface Props {
   feature: Feature
@@ -385,6 +387,14 @@ export default function FeaturePageClient({ feature }: Props) {
               {feature.name}
             </p>
           </motion.div>
+
+          {/* ── Feature navigation ─────────────────────── */}
+          <FeatureNavigation
+            currentSlug={feature.slug}
+            previousSlug={getPreviousFeatureSlug(feature.slug)}
+            nextSlug={getNextFeatureSlug(feature.slug)}
+            featureName={feature.name}
+          />
         </div>
       </div>
     </RouteGuard>
