@@ -158,4 +158,48 @@ export const features: Feature[] = [
       { type: 'image', src: '/media/features/legacy/bawamirrorpic.jpeg', caption: 'The Bearded Dragon' },
     ],
   },
+  {
+    name: 'HEZYN',
+    slug: 'hezyn',
+    subtitle: 'AI B2B SaaS Founder',
+    heroImage: '/media/heroes/legacy.jpg',
+    audioSrc: '/audio/obamahavedih.mp3',
+    media: [
+      { type: 'image', src: '/media/features/mirja/hessenalone.jpeg', caption: 'When Hessen sees ABG secretaries...' },
+      { type: 'image', src: '/media/features/legacy/hessenandnabeel.jpeg', caption: 'Most nationalist Syrian oat' },
+    ],
+  },
+  {
+    name: 'SIKANDER',
+    slug: 'sikander',
+    subtitle: 'Ashgantarrr',
+    heroImage: '/media/heroes/legacy.jpg',
+    audioSrc: '/audio/everywherigo.mp3',
+    media: [
+      { type: 'image', src: '/media/features/mirja/iskandarbuzzed.jpeg', caption: 'Oh, Iskandar!' },
+      { type: 'image', src: '/media/features/legacy/iskandarstaring.jpeg', caption: 'Nonchalant Iskandar' },
+    ],
+  },
+  {
+    name: 'BUSTIN',
+    slug: 'bustin',
+    subtitle: 'BILLABONG BOOTYCHEEK BANGING BUSTIN',
+    heroImage: '/media/heroes/legacy.jpg',
+    audioSrc: '/audio/everywherigo.mp3',
+    media: [
+      { type: 'image', src: '/media/features/mirja/justinmogging.jpeg', caption: 'OBEY.' },
+      { type: 'image', src: '/media/features/legacy/justinflexing.jpeg', caption: 'MONEY TALKS ASL' },
+    ],
+  },
+  {
+    name: 'KHANIE',
+    slug: 'khanie',
+    subtitle: 'GET OUT OF MY CLASSROOM',
+    heroImage: '/media/heroes/legacy.jpg',
+    audioSrc: '/audio/everywherigo.mp3',
+    media: [
+      { type: 'image', src: '/media/features/mirja/khanie1.jpeg', caption: 'Softball legend' },
+      { type: 'image', src: '/media/features/legacy/khanie2.jpeg', caption: 'SOME MEN KNOW NO REASON.' },
+    ],
+  },
 ]
