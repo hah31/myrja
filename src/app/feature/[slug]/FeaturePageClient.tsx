@@ -464,6 +464,26 @@ function getPlaceholderText(name: string, index: number): string {
       'Never lets people drive his car',
       'Truly a little fuzzball on the inside.',
     ],
+    BUSTIN: [
+      'The real legend of this website, he leaked every known bit of info about Mirja and ARK.',
+      'Never lets people drive his car',
+      'Truly a little fuzzball on the inside.',
+    ],
+    SIKANDER: [
+      'The real legend of this website, he leaked every known bit of info about Mirja and ARK.',
+      'Never lets people drive his car',
+      'Truly a little fuzzball on the inside.',
+    ],
+    HEZYN: [
+      'The real legend of this website, he leaked every known bit of info about Mirja and ARK.',
+      'Never lets people drive his car',
+      'Truly a little fuzzball on the inside.',
+    ],
+    KHANIE: [
+      'The real legend of this website, he leaked every known bit of info about Mirja and ARK.',
+      'Never lets people drive his car',
+      'Truly a little fuzzball on the inside.',
+    ],
   }
   return blocks[name]?.[index] ?? 'An editorial note forthcoming.'
 }
