@@ -462,27 +462,27 @@ function getPlaceholderText(name: string, index: number): string {
     BAWAA: [
       'The real legend of this website, he leaked every known bit of info about Mirja and ARK.',
       'Never lets people drive his car',
-      'Truly a little fuzzball on the inside.',
+      'Does burnouts in front of 128 st francis cir every night.',
     ],
     BUSTIN: [
-      'The real legend of this website, he leaked every known bit of info about Mirja and ARK.',
-      'Never lets people drive his car',
-      'Truly a little fuzzball on the inside.',
+      'Bustins bizarre, bulbous body bends backwards, baffling bewildered bystanders. Brazenly, blind bats burrow beneath Bustins boots!',
+      'billabong banging bustin',
+      'OBEY.',
     ],
     SIKANDER: [
-      'The real legend of this website, he leaked every known bit of info about Mirja and ARK.',
-      'Never lets people drive his car',
-      'Truly a little fuzzball on the inside.',
+      'Oh, Iskandar!  Verily I shall make haste upon my quest to quiver the sliver of the delicate Iskandar.',
+      'Ya zallama',
+      'From dusty dunes to Persian skies, The fire burned within his eyes. With crimson cape and booming voice, He left the conquered earth no choice.',
     ],
     HEZYN: [
-      'The real legend of this website, he leaked every known bit of info about Mirja and ARK.',
-      'Never lets people drive his car',
-      'Truly a little fuzzball on the inside.',
+      'AI B2B SaaS founder with previous a16z speedrun funding admitted to Y Combinator with ABG CMO + COO.',
+      'Died to the ender dragon 3x.',
+      'Big proponent of the big yahu.',
     ],
     KHANIE: [
-      'The real legend of this website, he leaked every known bit of info about Mirja and ARK.',
-      'Never lets people drive his car',
-      'Truly a little fuzzball on the inside.',
+      'Oh, you think darkness is your ally?',
+      'But you merely adopted the dark.  I was born in it, molded by it.',
+      'Nobody cared who he was til he put on the mask.',
     ],
   }
   return blocks[name]?.[index] ?? 'An editorial note forthcoming.'
