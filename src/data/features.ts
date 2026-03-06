@@ -174,7 +174,7 @@ export const features: Feature[] = [
     slug: 'sikander',
     subtitle: 'Ashgantarrr',
     heroImage: '/media/heroes/legacy.jpg',
-    audioSrc: '/audio/everywherigo.mp3',
+    audioSrc: '/audio/lifecouldbeadream.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/iskandarbuzzed.jpeg', caption: 'Oh, Iskandar!' },
       { type: 'image', src: '/media/features/legacy/iskandarstaring.jpeg', caption: 'Nonchalant Iskandar' },
@@ -185,7 +185,7 @@ export const features: Feature[] = [
     slug: 'bustin',
     subtitle: 'BILLABONG BOOTYCHEEK BANGING BUSTIN',
     heroImage: '/media/heroes/legacy.jpg',
-    audioSrc: '/audio/everywherigo.mp3',
+    audioSrc: '/audio/moneytalks.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/justinmogging.jpeg', caption: 'OBEY.' },
       { type: 'image', src: '/media/features/legacy/justinflexing.jpeg', caption: 'MONEY TALKS ASL' },
@@ -196,7 +196,7 @@ export const features: Feature[] = [
     slug: 'khanie',
     subtitle: 'GET OUT OF MY CLASSROOM',
     heroImage: '/media/heroes/legacy.jpg',
-    audioSrc: '/audio/everywherigo.mp3',
+    audioSrc: '/audio/killshot.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/khanie1.jpeg', caption: 'Softball legend' },
       { type: 'image', src: '/media/features/legacy/khanie2.jpeg', caption: 'SOME MEN KNOW NO REASON.' },
