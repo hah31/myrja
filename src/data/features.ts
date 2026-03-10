@@ -25,7 +25,10 @@ export const features: Feature[] = [
       { type: 'image', src: '/media/features/mirja/suhoorfestlossymirja.jpeg', caption: 'Mirja gets brain at Suhoorfest' },
       { type: 'image', src: '/media/features/mirja/mirjagoldeneyes.png', caption: 'Mirja turns evil' },
       { type: 'image', src: '/media/features/mirja/mirjaxark.jpeg', caption: 'Mirja X ARK' },
+      { type: 'image', src: '/media/features/mirja/mirjamouthopen.jpeg', caption: 'Brain from Mirja?' },
+      { type: 'image', src: '/media/features/mirja/mirjatongue.jpeg', caption: 'Whos a good boy?' },
       { type: 'image', src: '/media/features/mirja/mirjadog.jpeg', caption: 'Whos a good boy?' },
+      { type: 'image', src: '/media/features/mirja/mirjalicense.jpeg', caption: 'mirja [redacted]' },
     ],
   },
   {
@@ -199,8 +202,7 @@ export const features: Feature[] = [
     heroImage: '/media/heroes/legacy.jpg',
     audioSrc: '/audio/lifecouldbeadream.mp3',
     media: [
-      { type: 'image', src: '/media/features/mirja/khanie1.jpeg', caption: 'Softball legend' },
-      { type: 'image', src: '/media/features/legacy/khanie2.jpeg', caption: 'SOME MEN KNOW NO REASON.' },
+      { type: 'image', src: '/media/features/legacy/khanie2.jpeg', caption: 'hes tuff i guess' },
     ],
   },
 ]
