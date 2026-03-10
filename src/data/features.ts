@@ -174,10 +174,11 @@ export const features: Feature[] = [
     slug: 'sikander',
     subtitle: 'Ashgantarrr',
     heroImage: '/media/heroes/legacy.jpg',
-    audioSrc: '/audio/lifecouldbeadream.mp3',
+    audioSrc: '/audio/killshot.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/iskandarbuzzed.jpeg', caption: 'Oh, Iskandar!' },
       { type: 'image', src: '/media/features/legacy/iskandarstaring.jpeg', caption: 'Nonchalant Iskandar' },
+      { type: 'image', src: '/media/features/legacy/iskandarconfused.jpeg', caption: 'Iskandar is confused ngl' },
     ],
   },
   {
@@ -196,7 +197,7 @@ export const features: Feature[] = [
     slug: 'khanie',
     subtitle: 'GET OUT OF MY CLASSROOM',
     heroImage: '/media/heroes/legacy.jpg',
-    audioSrc: '/audio/killshot.mp3',
+    audioSrc: '/audio/lifecouldbeadream.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/khanie1.jpeg', caption: 'Softball legend' },
       { type: 'image', src: '/media/features/legacy/khanie2.jpeg', caption: 'SOME MEN KNOW NO REASON.' },
