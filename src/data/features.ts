@@ -158,7 +158,7 @@ export const features: Feature[] = [
     audioSrc: '/audio/everywherigo.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/bawaposing.jpeg', caption: 'Bebida Monkey' },
-      { type: 'image', src: '/media/features/legacy/bawamirrorpic.jpeg', caption: 'The Bearded Dragon' },
+      { type: 'image', src: '/media/features/mirja/bawamirrorpic.jpeg', caption: 'The Bearded Dragon' },
     ],
   },
   {
@@ -169,7 +169,7 @@ export const features: Feature[] = [
     audioSrc: '/audio/obamahavedih.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/hessenalone.jpeg', caption: 'When Hessen sees ABG secretaries...' },
-      { type: 'image', src: '/media/features/legacy/hessenandnabeel.jpeg', caption: 'Most nationalist Syrian oat' },
+      { type: 'image', src: '/media/features/mirja/hessenandnabeel.jpeg', caption: 'Most nationalist Syrian oat' },
     ],
   },
   {
@@ -180,8 +180,8 @@ export const features: Feature[] = [
     audioSrc: '/audio/killshot.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/iskandarbuzzed.jpeg', caption: 'Oh, Iskandar!' },
-      { type: 'image', src: '/media/features/legacy/iskandarstaring.jpeg', caption: 'Nonchalant Iskandar' },
-      { type: 'image', src: '/media/features/legacy/iskandarconfused.jpeg', caption: 'Iskandar is confused ngl' },
+      { type: 'image', src: '/media/features/mirja/iskandarstaring.jpeg', caption: 'Nonchalant Iskandar' },
+      { type: 'image', src: '/media/features/mirja/iskandarconfused.jpeg', caption: 'Iskandar is confused ngl' },
     ],
   },
   {
@@ -192,7 +192,7 @@ export const features: Feature[] = [
     audioSrc: '/audio/moneytalks.mp3',
     media: [
       { type: 'image', src: '/media/features/mirja/justinmogging.jpeg', caption: 'OBEY.' },
-      { type: 'image', src: '/media/features/legacy/justinflexing.jpeg', caption: 'MONEY TALKS ASL' },
+      { type: 'image', src: '/media/features/mirja/justinflexing.jpeg', caption: 'MONEY TALKS ASL' },
     ],
   },
   {
@@ -202,7 +202,7 @@ export const features: Feature[] = [
     heroImage: '/media/heroes/legacy.jpg',
     audioSrc: '/audio/lifecouldbeadream.mp3',
     media: [
-      { type: 'image', src: '/media/features/legacy/khanie2.jpeg', caption: 'hes tuff i guess' },
+      { type: 'image', src: '/media/features/mirja/khanie.jpeg', caption: 'hes tuff i guess' },
     ],
   },
 ]
