@@ -198,7 +198,7 @@ export const features: Feature[] = [
   {
     name: 'KHANIE',
     slug: 'khanie',
-    subtitle: 'GET OUT OF MY CLASSROOM',
+    subtitle: 'IFS Basketball Legend',
     heroImage: '/media/heroes/legacy.jpg',
     audioSrc: '/audio/lifecouldbeadream.mp3',
     media: [
