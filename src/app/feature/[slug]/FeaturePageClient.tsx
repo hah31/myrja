@@ -482,8 +482,8 @@ function getPlaceholderText(name: string, index: number): string {
     KHANIE: [
       'Oh, you think darkness is your ally?',
       'But you merely adopted the dark.  I was born in it, molded by it.',
-      'Nobody cared who he was til he put on the mask.',
+      'Nobody cared who I was until I put on the mask.',
     ],
   }
-  return blocks[name]?.[index] ?? 'An editorial note forthcoming.'
+  return blocks[name]?.[index] ?? 'Ayinnius flowkirkenyahuenuinely might be jewish.'
 }
